@@ -21,8 +21,8 @@ const Login = () => {
       </Grid>
       <Grid className="Thirdgrid" xs={6}>
         <Grid className="Innergrid">
-          <h1>MASTERMIND MAESTRO</h1>
-          <p>Create an account</p>
+          <h1 className="Mastermind1">MASTERMIND MAESTRO</h1>
+          <p className="Account">Create an account</p>
         </Grid>
         <Grid>
           <Button variant="contained" endIcon={<FacebookIcon />}>
@@ -31,26 +31,34 @@ const Login = () => {
         </Grid>
         <Grid >
           <p>- or -</p>
-          <Grid >
-          <TextField
-  
-            id="standard-multiline-flexible"
-            label="Email"
-            variant="standard"
-            
-          />
-          <br></br>
-          <TextField
-            id="standard-multiline-flexible"
-            label="Password"
-            multiline
-            maxRows={4}
-            variant="standard"
-          />
+          <Grid className="Textfields">
+            <TextField
+
+              id="standard-multiline-flexible"
+              label="Enter valid email"
+              variant="standard"
+
+            />
+            <br></br>
+            <TextField
+              id="standard-multiline-flexible"
+              label="Create password"
+              maxRows={6}
+              variant="standard"
+            />
+            <br></br>
+            <TextField
+              id="standard-multiline-flexible"
+              label="Confirm password"
+              maxRows={6}
+              variant="standard"
+            />
           </Grid>
           <br></br>
           <Grid className="Getstarted" >
-            <Button className="Getstarted1" variant="contained">Get Started</Button>
+            <Button className="Getstarted1" variant="contained" >
+              Get started
+            </Button>
           </Grid>
           <br></br>
           <p>Already have an account? </p> <a href="https://www.w3schools.com/tags/att_a_href.asp">Log in</a>
