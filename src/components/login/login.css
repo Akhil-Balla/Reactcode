@@ -11,6 +11,14 @@
   background-position: center;
   height: 100%;
 }
+.Mastermind1{
+  color: orange !important;
+  margin-bottom: 8%;
+  font-size: 2.5rem !important;
+}
+.Textfieldslogin{
+  padding: 35% 2% !important;
+}
 
 .LeftSideContent {
   text-align: center;
@@ -25,11 +33,14 @@
   font-size: 18px;
   margin-top: 10px;
 }
+.signupbutton{
+  padding: 0% 10% !important;
+}
 
 .RightSide {
   padding-top: 90px !important;
   text-align: center;
-  padding: 10px;
+  /* padding: 10px; */
   justify-content: center;
   align-items: center;
 }
@@ -41,9 +52,9 @@
 }
 
 .RightSide p {
-  margin-top: 10px;
+  margin-top: 55px;
   color: #666;
-  font-size: 16px;
+  font-size: 17px;
 }
 
 .RightSide a {
@@ -56,7 +67,8 @@
   text-decoration: underline;
 }
 .RightSide Button {
-  margin-top: 20px;
+  margin-top: 5px;
+  margin-bottom: 24%;
   background-color: #007bff;
   color: #fff;
   padding: 10px 20px;

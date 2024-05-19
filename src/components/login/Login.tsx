@@ -41,7 +41,7 @@ const Login = () => {
       </Grid>
 
       <Grid item xs={6} className="RightSide">
-        <h1>MASTERMIND MAESTRO</h1>
+        <h1 className="Mastermind1">MASTERMIND MAESTRO</h1>
         <p>Sign in to your account</p>
         <form onSubmit={handleSubmit}>
           <Grid
@@ -53,29 +53,23 @@ const Login = () => {
           >
             <Grid item xs={12} sm={8}>
               <TextField
-                label="Email"
-                type="email"
-                variant="outlined"
-                fullWidth
-                required
-                value={username}
-                onChange={(e) => setUsername(e.target.value)}
+                label="Email*"
+                id="outlined-size-small"
+                size="small"
               />
             </Grid>
             <Grid item xs={12} sm={8}>
               <TextField
-                label="Password"
-                type="password"
-                variant="outlined"
-                fullWidth
-                required
-                value={password}
-                onChange={(e) => setPassword(e.target.value)}
+                label="Password*"
+                id="outlined-size-small"
+                size="small"
               />
+
             </Grid>
+
           </Grid>
-          <Button className="Getstarted1" variant="contained" type="submit">
-            Sign In
+          <Button className="signupbutton" variant="contained" size="small">
+            Sign in
           </Button>
           {error && <p style={{ color: "red" }}>{error}</p>}
         </form>
