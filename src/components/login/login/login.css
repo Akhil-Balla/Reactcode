@@ -1,0 +1,33 @@
+.Secondgrid{
+   background-image: url("https://images4.alphacoders.com/135/1354755.png");
+}
+.Headings1{
+    color: white;
+}
+.Para1{
+    color: white;
+}
+.Thirdgrid{
+    align-items: center;
+    /* margin-left: 100px; */
+    text-align: center;
+}
+.Maingrid{
+    display: flex;
+}
+.Innergrid{
+    /* align-items: center; */
+}
+.Getstarted{
+    /* width:85%; */
+    margin-top: 9%;
+    margin-bottom: 10%;
+}
+.Getstarted1{
+    width:33%;
+    margin-top: 9%;
+    margin-bottom: 10%;
+}
+.textfields1{
+    /* width: 20%; */
+}
