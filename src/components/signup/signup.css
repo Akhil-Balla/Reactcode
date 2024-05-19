@@ -1,0 +1,73 @@
+.Maingrid {
+  height: 100vh;
+  padding: 50px;
+  background-color: #f3c88d;
+}
+
+.LeftSide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url("../../../../public/bgImage.png");
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+}
+
+.LeftSideContent {
+  text-align: center;
+  color: #fff;
+}
+.LeftSideContent h1 {
+  margin: 0;
+  font-size: 32px;
+}
+
+.LeftSideContent p {
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+.RightSide {
+  background-color: #fff;
+  text-align: center;
+  padding: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+.RightSide h1 {
+  margin-top: 0;
+  color: #333;
+  font-size: 24px;
+}
+
+.RightSide p {
+  margin-top: 10px;
+  color: #666;
+  font-size: 16px;
+}
+
+.RightSide a {
+  color: #007bff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.RightSide a:hover {
+  text-decoration: underline;
+}
+.RightSide Button {
+  margin-top: 20px;
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.RightSide Button:hover {
+  background-color: #0056b3;
+}
