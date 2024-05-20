@@ -21,61 +21,67 @@ const Login = () => {
       (user) => user.username === username && user.password === password
     );
     if (user) {
+      console.log("success")
       navigate("/dashboard");
     } else {
       setError("Invalid username or password");
     }
   };
-
   return (
     <Grid container className="Maingrid" spacing={2}>
-      <Grid item xs={6} className="LeftSide">
-        <div className="LeftSideContent">
-          <h1>Mastermind Better.</h1>
-          <h1>Success Together.</h1>
+      <Grid className="Innergrid11">
+        <Grid item xs={6} className="LeftSide">
+          <div className="LeftSideContent">
+            <h1>Mastermind Better.</h1>
+            <h1>Success Together.</h1>
+            <p>
+              Get meaningful results with essential tools for brainstorming, goal
+              setting, and accountability.
+            </p>
+          </div>
+        </Grid>
+
+        <Grid item xs={6} className="RightSide">
+          <h1 className="Mastermind1">MASTERMIND MAESTRO</h1>
+          <p>Login to your account</p>
+          <form onSubmit={handleSubmit}>
+            <Grid
+              container
+              direction="column"
+              alignItems="center"
+              spacing={2}
+              mb={2}
+            >
+              <Grid item xs={12} sm={8}>
+                <TextField
+                  label="Email*"
+                  value={username}
+                  onChange={(e)=>setUsername(e.target.value)}
+                  id="outlined-size-small"
+                  size="small"
+                />
+              </Grid>
+              <Grid item xs={12} sm={8}>
+                <TextField
+                  label="Password*"
+                  value={password}
+                  onChange={(e)=>setPassword(e.target.value)}
+                  id="outlined-size-small"
+                  size="small"
+                />
+
+              </Grid>
+
+            </Grid>
+            <Button className="signupbutton" variant="contained" size="small" onClick={handleSubmit}>
+              Login
+            </Button>
+            {error && <p style={{ color: "red" }}>{error}</p>}
+          </form>
           <p>
-            Get meaningful results with essential tools for brainstorming, goal
-            setting, and accountability.
+            Don't have an account? <Link to="/signup">Sign up</Link>
           </p>
-        </div>
-      </Grid>
-
-      <Grid item xs={6} className="RightSide">
-        <h1 className="Mastermind1">MASTERMIND MAESTRO</h1>
-        <p>Sign in to your account</p>
-        <form onSubmit={handleSubmit}>
-          <Grid
-            container
-            direction="column"
-            alignItems="center"
-            spacing={2}
-            mb={2}
-          >
-            <Grid item xs={12} sm={8}>
-              <TextField
-                label="Email*"
-                id="outlined-size-small"
-                size="small"
-              />
-            </Grid>
-            <Grid item xs={12} sm={8}>
-              <TextField
-                label="Password*"
-                id="outlined-size-small"
-                size="small"
-              />
-
-            </Grid>
-
-          </Grid>
-          <Button className="signupbutton" variant="contained" size="small">
-            Sign in
-          </Button>
-          {error && <p style={{ color: "red" }}>{error}</p>}
-        </form>
-        <p>
-          Don't have an account? <Link to="/signup">Sign up</Link>
-        </p>
+        </Grid>
       </Grid>
     </Grid>
   );

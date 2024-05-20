@@ -1,7 +1,7 @@
 .Maingrid {
   height: 100vh;
-  padding: 50px;
-  background-color: #f3c88d;
+  padding: 45px;
+  background-color: #cb9851;
 }
 
 .LeftSide {
@@ -12,6 +12,16 @@
   background-size: cover;
   background-position: center;
   height: 100%;
+}
+.Innergrid{
+  display: flex;
+  width: inherit;
+  box-shadow :5px 5px 5px #80683c;
+
+}
+.Mastermindh1{
+  color: orange !important;
+  font-size: 1.75rem !important;
 }
 
 .LeftSideContent {
@@ -36,17 +46,24 @@
   align-items: center;
 }
 
-.RightSide h1 {
+/* .RightSide h1 {
   margin-top: 0;
   color: #333;
   font-size: 24px;
+} */
+.Ortag1{
+  margin-top:  -23%; ;
 }
 
-.RightSide p {
+.signup12{
+  margin-top: -18%;
+}
+
+/* .RightSide p1 {
   margin-top: 10px;
   color: #666;
   font-size: 16px;
-}
+} */
 
 .RightSide a {
   color: #007bff;
@@ -61,7 +78,7 @@
   margin-top: 20px;
   background-color: #007bff;
   color: #fff;
-  padding: 10px 20px;
+  padding: 5px 22px !important;
   border: none;
   border-radius: 5px;
   cursor: pointer;
@@ -70,4 +87,7 @@
 
 .RightSide Button:hover {
   background-color: #0056b3;
+}
+.Getstarted1{
+  background-color: rgb(232, 158, 20) !important;
 }

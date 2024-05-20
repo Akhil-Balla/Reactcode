@@ -28,6 +28,11 @@
   margin: 0;
   font-size: 32px;
 }
+.Innergrid11{
+  box-shadow: 5px 5px 5px #80683c;
+  display: flex;
+  width: inherit;
+}
 
 .LeftSideContent p {
   font-size: 18px;
@@ -35,6 +40,7 @@
 }
 .signupbutton{
   padding: 0% 10% !important;
+  background-color: orange !important;
 }
 
 .RightSide {
@@ -51,11 +57,11 @@
   font-size: 24px;
 }
 
-.RightSide p {
+/* .RightSide p {
   margin-top: 55px;
   color: #666;
   font-size: 17px;
-}
+} */
 
 .RightSide a {
   color: #007bff;

@@ -1,28 +1,32 @@
-import { Typography, Grid, Button } from "@mui/material";
-import { useNavigate } from "react-router-dom";
+import * as React from 'react';
+import AppBar from '@mui/material/AppBar';
+import Box from '@mui/material/Box';
+import Toolbar from '@mui/material/Toolbar';
+import Typography from '@mui/material/Typography';
+import Button from '@mui/material/Button';
+import IconButton from '@mui/material/IconButton';
+import MenuIcon from '@mui/icons-material/Menu';
 
-const Dashboard = () => {
-  const navigate = useNavigate();
-  const handleLogout = () => {
-    navigate("/");
-  };
-
+export default function ButtonAppBar() {
   return (
-    <Grid container display="flex" flexDirection="column">
-      <Grid display="flex" justifyContent="space-between">
-        <Typography variant="h4" gutterBottom>
-          Dashboard
-        </Typography>
-        <Button variant="contained" onClick={handleLogout}>
-          Logout
-        </Button>
-      </Grid>
-
-      <Grid>
-        <Typography paragraph>Hi welcome to </Typography>
-      </Grid>
-    </Grid>
+    <Box sx={{ flexGrow: 1 }}>
+      <AppBar position="static">
+        <Toolbar>
+          <IconButton
+            size="large"
+            edge="start"
+            color="inherit"
+            aria-label="menu"
+            sx={{ mr: 2 }}
+          >
+            <MenuIcon />
+          </IconButton>
+          <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
+            News
+          </Typography>
+          <Button color="inherit">Login</Button>
+        </Toolbar>
+      </AppBar>
+    </Box>
   );
-};
-
-export default Dashboard;
+}
